@@ -3,14 +3,13 @@
 This repository contains an Excel template for authoring data contracts using the **Open Data Contract Standard V3**. 
 It provides a user-friendly interface to define and share data contracts with stakeholders, especially those less familiar with YAML.
 
-## 📥 Download Template
+## 📥 Template
 
 [odcs-template.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
 
 ## 💡 Example
 
 [orders-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/orders-example.xlsx)
-A Data Contract for webshop orders
 
 
 ## 🧾 What is a Data Contract?
@@ -25,23 +24,18 @@ While data contracts are typically written in YAML, this Excel template enables 
 The Excel file includes the following sheets:
 
 ### 1. `Instructions`
-Provides a quick guide on how to fill out the template:
-- Start with the `Fundamentals` tab
-- Create a separate sheet for each table or schema using `Schema <table_name>`
-- Export to YAML via the Data Contract CLI or upload to Data Mesh Manager
+Provides a quick guide on how to fill out the template.
 
 ### 2. `Fundamentals`
-Captures general metadata for the data contract, including:
-- ID, Name, Version
-- Owner, Domain, Data Product
-- Description, Tags, and Usage details
+Captures general metadata for the data contract, including ID, Name, Version, Domain and Description.
 
 ### 3. `Schema <table_name>`
-Defines the data model for tables, messages, or objects.
-Copy 
-This is the core content.
+Defines the data model with all properties.
+
+Copy this sheet for every table in your data contract.
 
 ### 4. `Custom Properties`
+
 Use this optional sheet to define additional metadata or annotations.
 
 
