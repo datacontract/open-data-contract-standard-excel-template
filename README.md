@@ -5,7 +5,7 @@ It provides a user-friendly interface to define and share data contracts with st
 
 ## 📥 Download Template
 
-[odcs-tempalte.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
+[odcs-template.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
 
 ## 💡 Example
 
