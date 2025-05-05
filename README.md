@@ -9,14 +9,13 @@ It provides a user-friendly interface to define and share data contracts with st
 ## 📥 Template
 
 Download the Excel Template:
-
-[odcs-template.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
+- [odcs-template.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
 
 ## 💡 Example
 
 Open an Example Data Contract:
 
-[shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-example.xlsx)
+- [shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-example.xlsx)
 
 
 ## 🧾 What is a Data Contract?
