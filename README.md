@@ -3,16 +3,20 @@
 This repository contains an Excel template for authoring data contracts using the **Open Data Contract Standard V3**. 
 It provides a user-friendly interface to define and share data contracts with stakeholders, especially those less familiar with YAML.
 
-<img width="1341" alt="Excel Example" src="https://github.com/user-attachments/assets/fb9fb09f-2743-4e76-8757-f7d051f175de" />
+<img width="1397" alt="image" src="https://github.com/user-attachments/assets/f9013cee-a9c8-4ba8-a111-0f4b2e9b6bf8" />
 
 
 ## 📥 Template
+
+Download the Excel Template:
 
 [odcs-template.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
 
 ## 💡 Example
 
-[orders-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/orders-example.xlsx)
+Open an Example Data Contract:
+
+[shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-example.xlsx)
 
 
 ## 🧾 What is a Data Contract?
