@@ -58,6 +58,8 @@ datacontract import --format excel --source odcs.xlsx
 
 Upload the Excel directly in [Data Mesh Manager](https://datamesh-manager.com) using the “Import Excel” feature, and open existing ODCS data contracts in Excel.
 
+<img width="1257" alt="image" src="https://github.com/user-attachments/assets/993a15bf-c1a3-495a-95fc-a0ba4d765c87" />
+
 
 ## 📜 License
 
