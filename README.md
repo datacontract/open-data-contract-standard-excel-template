@@ -48,9 +48,11 @@ Use this optional sheet to define additional metadata or annotations.
 ## 🚀 Integrations
 
 ### Data Contract CLI
-(coming soon)
+Use the open-source [Data Contract CLI](https://github.com/datacontract/datacontract-cli) to convert the Excel template to or from YAML.
 
-Use the open-source Data Contract CLI to convert the Excel template to or from YAML.
+```
+datacontract import --format excel --source odcs.xlsx
+```
 
 ### Data Mesh Manager
 
