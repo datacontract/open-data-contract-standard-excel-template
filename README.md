@@ -42,7 +42,31 @@ Defines the data model with all properties.
 
 Copy this sheet for every table in your data contract.
 
-### 4. `Custom Properties`
+### 4. `Support`
+
+Support and communication channels help consumers find help regarding their use of the data contract.
+
+### 5. `Team`
+
+This section lists team members and the history of their relation with this data contract. In v2.x, this section was called stakeholders.
+
+### 6. `Roles`
+
+This section lists team members and the history of their relation with this data contract.
+
+### 7. `SLA`
+
+This section describes the service-level agreements (SLA).
+
+### 8. `Servers`
+
+The servers element describes where the data protected by this data contract is physically located. 
+
+### 9. `Pricing`
+
+This section covers pricing when you bill your customer for using this data product.
+
+### 10. `Custom Properties`
 
 Use this optional sheet to define additional metadata or annotations.
 
