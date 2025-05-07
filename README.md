@@ -15,9 +15,9 @@ Download the Excel Template:
 
 ## 💡 Example
 
-Open an Example Data Contract:
+Here is an example Data Contract:
 
-- [shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.xlsx)
+- [shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.xlsx) that can be converted to [this YAML](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.yaml) 
 
 
 ## 🧾 What is a Data Contract?
