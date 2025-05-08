@@ -90,4 +90,4 @@ Upload the Excel directly in [Data Mesh Manager](https://datamesh-manager.com) u
 
 ## 📜 License
 
-Created by Jochen Christ and Dr. Simon Harrer under MIT License
+Created by [Jochen Christ](https://www.linkedin.com/in/jochenchrist/) and [Dr. Simon Harrer](https://www.linkedin.com/in/simonharrer/) under MIT License
