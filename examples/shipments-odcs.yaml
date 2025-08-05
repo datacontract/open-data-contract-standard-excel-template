@@ -218,11 +218,11 @@ price:
 team:
 - username: vimportant
   role: administrator
-  dateIn: 2020-01-01
+  dateIn: "2020-01-01"
 - username: nimportant
   role: reader
-  dateIn: 2020-01-01
-  dateOut: 2024-10-10
+  dateIn: "2020-01-01"
+  dateOut: "2024-10-10"
 slaProperties:
 - property: availability
   value: 95%
