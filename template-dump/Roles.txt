@@ -1,0 +1,8 @@
+sheet	Roles	state=visible
+A1	Roles
+A2	This section lists team members and the history of their relation with this data contract.\nThis section lists the roles that a consumer may need to access the dataset depending on the type of access they require.\n
+A4	Role
+B4	Description
+C4	Access
+D4	1st Level Approvers
+E4	2nd Level Approvers

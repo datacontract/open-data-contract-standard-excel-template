@@ -1,0 +1,12 @@
+sheet	Relationships	state=visible
+validation	A5:A100	list	"schema,property"
+validation	B5:B100	list	"foreignKey,references,mapsTo"
+conditional	E5:E21	expression	C5="sql"
+A1	Relationships
+A2	Define relationships between schemas by mapping properties from one schema to another (e.g., foreign keys).
+A3	Use schema.property dot syntax (e.g., orders.customer_id). Comma-separated for composite keys. Level: 'schema' or 'property'.
+A4	Level
+B4	Type
+C4	From
+D4	To
+E4	Description

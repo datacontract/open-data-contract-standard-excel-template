@@ -1,0 +1,7 @@
+sheet	Pricing	state=visible
+validation	F4:K6	list	"Yes,No"
+A1	Pricing
+A2	This section covers pricing when you bill your customer for using this data product.\n
+A4	Price Amount
+A5	Price Currency
+A6	Price Unit

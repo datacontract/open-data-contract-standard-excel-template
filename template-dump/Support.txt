@@ -1,0 +1,9 @@
+sheet	Support	state=visible
+A1	Support and Communication Channels
+A2	Support and communication channels help consumers find help regarding their use of the data contract.\nSupport and communication channels help consumers find help regarding their use of the data contract.
+A4	Channel
+B4	Channel URL
+C4	Description
+D4	Tool
+E4	Scope
+F4	Invitation URL

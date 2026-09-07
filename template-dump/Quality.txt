@@ -1,0 +1,21 @@
+sheet	Quality	state=visible
+validation	G5:G21	list	"mustBe, mustNotBe, mustBeGreaterThan, mustBeGreaterOrEqualTo, mustBeLessThan, mustBeLessOrEqualTo, mustBeBetween, mustNotBeBetween"
+validation	E5:E21	list	"noNullValues,nullValues,noMissingValues,missingValues,noInvalidValues,invalidValues,noDuplicateValues,duplicateValues,freshness"
+validation	C5:C21	list	"text,library,sql,custom"
+conditional	E5:E21	expression	C5="sql"
+conditional	F5:F21	expression	C5="library"
+A1	Quality
+A2	This section describes data quality rules & parameters. They are tightly linked to the schema described in the previous sheet(s).
+A4	Schema
+B4	Property
+C4	Quality Type
+D4	Description
+E4	Rule (Library)
+F4	Query (SQL)
+G4	Threshold Operator
+H4	Threshold Value
+I4	Quality Engine (Custom)
+J4	Implementation (Custom)
+K4	Severity
+L4	Scheduler
+M4	Schedule

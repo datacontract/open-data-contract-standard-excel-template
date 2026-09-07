@@ -1,0 +1,7 @@
+sheet	Custom Properties	state=visible
+A1	Custom Properties
+A2	This section covers custom properties you may find in a data contract.
+A4	Property
+B4	Value
+A5	owner
+B5	=IF(owner <> "", owner, "")

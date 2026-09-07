@@ -1,0 +1,23 @@
+sheet	Fundamentals	state=visible
+merged	A12:B12
+validation	G11:L13 G17:L22 G23:L24	list	"Yes,No"
+validation	D11:D13 D17:D18 D22 D24	list	"string,number,integer,boolean,array,object"
+A1	Fundamentals
+A2	This section describes the data model for one table, message, or object with their properties.
+A4	Kind
+C4	DataContract
+A5	apiVersion
+C5	v3.0.2
+A7	ID
+A8	Name
+A9	Version
+A10	Status
+A12	Owner
+A14	Domain
+A15	Data Product
+A16	Tenant
+A18	Description
+B19	Purpose
+B20	Limitations
+B21	Usage
+A23	Tags

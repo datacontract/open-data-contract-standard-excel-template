@@ -1,0 +1,10 @@
+sheet	SLA	state=visible
+A1	Service-Level Agreement (SLA)
+A2	This section describes the service-level agreements (SLA).\nThis section lists the roles that a consumer may need to access the dataset depending on the type of access they require.\n
+A4	Default SLA element(s)
+A6	Property
+B6	Value
+C6	Extended value
+D6	Unit
+E6	Element
+F6	Driver

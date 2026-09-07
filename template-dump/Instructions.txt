@@ -1,0 +1,25 @@
+sheet	Instructions	state=visible
+A1	Open Data Contract Standard V3
+A2	Use this Excel template to edit data contracts.
+A7	Data Contract
+A8	A data contract is a document that defines the structure, format, semantics, quality, and terms of use 
+A9	for exchanging data between a data provider and their consumers. 
+A10	A data contract is usually defined in YAML, but you can use this Excel document for easier collaboration
+A11	with your stakeholders.
+A14	Instructions
+A15	1. Fill in the 'Fundamentals' sheet with basic contract information
+A16	2. For every table create a Sheet called "Schema <tablename>"
+A17	3. After completing the template, 
+A18	a)
+B18	Convert  to YAML using Data Contract CLI
+B19	datacontract import --format excel --source odcs.xlsx
+A21	b)
+B21	Or, if you use Entropy Data, import the Excel directly.
+B22	Existing data contracts with the same ID will be updated.
+B23	Open Entropy Data → Go to Data Contracts → Click Add Data Contract → Import from Excel
+A26	Authors:
+B26	Jochen Christ, Dr. Simon Harrer
+A27	Version:
+B27	2025-12-01
+A28	License:
+B28	MIT
