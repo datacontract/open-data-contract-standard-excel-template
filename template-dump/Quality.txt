@@ -19,3 +19,6 @@ J4	Implementation (Custom)
 K4	Severity
 L4	Scheduler
 M4	Schedule
+N4	ID
+O4	Custom Property
+P4	Custom Value

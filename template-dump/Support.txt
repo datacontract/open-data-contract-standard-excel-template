@@ -7,3 +7,6 @@ C4	Description
 D4	Tool
 E4	Scope
 F4	Invitation URL
+G4	ID
+H4	Custom Property
+I4	Custom Value

@@ -6,3 +6,6 @@ B4	Description
 C4	Access
 D4	1st Level Approvers
 E4	2nd Level Approvers
+F4	ID
+G4	Custom Property
+H4	Custom Value

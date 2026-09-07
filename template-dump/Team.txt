@@ -1,10 +1,17 @@
 sheet	Team	state=visible
 A1	Team
 A2	This section lists team members and the history of their relation with this data contract. In v2.x, this section was called stakeholders.\n
-A4	Username
-B4	Name
-C4	Description
-D4	Role
-E4	Date In
-F4	Date Out
-G4	Replaced By Username
+A4	Team Name
+A5	Team Description
+A6	Team Tags
+A7	Team ID
+A9	Username
+B9	Name
+C9	Description
+D9	Role
+E9	Date In
+F9	Date Out
+G9	Replaced By Username
+H9	ID
+I9	Custom Property
+J9	Custom Value

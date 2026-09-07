@@ -9,4 +9,6 @@ A4	Level
 B4	Type
 C4	From
 D4	To
-E4	Description
+E4	ID
+F4	Custom Property
+G4	Custom Value

@@ -1,7 +1,16 @@
 sheet	Custom Properties	state=visible
+validation	A5:A1000	list	"Contract,Description,Server,Schema,Property,Quality,Support,Team,Team Member,Role,SLA,Relationship,Enum Value,Synonym,Verified Statement,Constraint"
+validation	E5:E1000	list	"Text,JSON"
 A1	Custom Properties
 A2	This section covers custom properties you may find in a data contract.
-A4	Property
-B4	Value
-A5	owner
-B5	=IF(owner <> "", owner, "")
+A4	Element Type
+B4	Element
+C4	Property
+D4	Value
+E4	Type
+F4	Description
+G4	Vendor
+H4	ID
+A5	Contract
+C5	owner
+D5	=IF(owner <> "", owner, "")

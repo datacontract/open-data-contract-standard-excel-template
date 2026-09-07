@@ -1,0 +1,11 @@
+sheet	Authoritative Definitions	state=visible
+validation	A5:A1000	list	"Contract,Description,Server,Schema,Property,Quality,Support,Team,Team Member,Role,SLA,Relationship,Enum Value,Synonym,Verified Statement,Constraint"
+validation	D5:D1000	list	"businessDefinition,transformationImplementation,videoTutorial,tutorial,implementation"
+A1	Authoritative Definitions
+A2	Links to authoritative sources (business definitions, implementations, tutorials) for any element of the contract.
+A4	Element Type
+B4	Element
+C4	URL
+D4	Type
+E4	Description
+F4	ID

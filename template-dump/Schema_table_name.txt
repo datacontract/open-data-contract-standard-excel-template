@@ -1,17 +1,24 @@
 sheet	Schema <table_name>	state=visible
 merged	B10:E10
 merged	B11:E11
+merged	B12:E12
+merged	B13:E13
+merged	B14:E14
+merged	B15:E15
+merged	B16:E16
 merged	B5:E5
 merged	B6:E6
 merged	B7:E7
 merged	B8:E8
 merged	B9:E9
-validation	H14:H49	list	"true,false"
-validation	C14:C49	list	"string,number,integer,boolean,array,object,timestamp,date,time"
-validation	G14:G49	list	"true,false"
-validation	L14:L49	list	"businessDefinition,transformationImplementation,videoTutorial,tutorial,implementation"
-validation	I14:I49	list	"confidential,restricted,public"
-validation	V14:V49	list	"TRUE,FALSE"
+validation	H19:H54	list	"true,false"
+validation	G19:G54	list	"true,false"
+validation	L19:L54	list	"businessDefinition,transformationImplementation,videoTutorial,tutorial,implementation"
+validation	I19:I54	list	"confidential,restricted,public"
+validation	V19:V54	list	"TRUE,FALSE"
+validation	B13 AM19:AM54	list	"TRUE,FALSE"
+validation	AL19:AL54	list	"column,measure,dimension"
+validation	C19:C54	list	"string,number,integer,boolean,array,object,timestamp,date,time,map,vector"
 A1	Schema
 A2	This section describes the data model for one table, message, or object with their properties.
 A3	Copy this sheet for every model in your data contract.
@@ -24,42 +31,52 @@ A8	Business Name
 A9	Physical Name
 A10	Data Granularity
 A11	Tags
-W12	Logical Type Options
-A13	Property
-B13	Business Name
-C13	Logical Type
-D13	Physical Type
-E13	Example(s)
-F13	Description
-G13	Required
-H13	Unique
-I13	Classification
-J13	Tags
-K13	Authoritative Definition URL
-L13	Authoritative Definition Type
-M13	Physical Name
-N13	Primary Key
-O13	Primary Key Position
-P13	Partitioned
-Q13	Partition Key Position
-R13	Encrypted Name
-S13	Transform Sources
-T13	Transform Logic\t
-U13	Transform Description
-V13	Critical Data Element Status
-W13	Maximum Items
-X13	Minimum Items
-Y13	Unique Items
-Z13	Format
-AA13	Minimum Length
-AB13	Maximum Length
-AC13	Exclusive Minimum
-AD13	Minimum
-AE13	Exclusive Maximum
-AF13	Maximum
-AG13	Multiple Of
-AH13	Minimum Properties
-AI13	Maximum Properties
-AJ13	Required Properties
-AK13	Pattern
-AL13	Comments (internal)
+A12	ID
+A13	Deprecated
+A14	Context Instructions
+A15	Custom Property
+A16	Custom Value
+W17	Logical Type Options
+A18	Property
+B18	Business Name
+C18	Logical Type
+D18	Physical Type
+E18	Example(s)
+F18	Description
+G18	Required
+H18	Unique
+I18	Classification
+J18	Tags
+K18	Authoritative Definition URL
+L18	Authoritative Definition Type
+M18	Physical Name
+N18	Primary Key
+O18	Primary Key Position
+P18	Partitioned
+Q18	Partition Key Position
+R18	Encrypted Name
+S18	Transform Sources
+T18	Transform Logic\t
+U18	Transform Description
+V18	Critical Data Element Status
+W18	Maximum Items
+X18	Minimum Items
+Y18	Unique Items
+Z18	Format
+AA18	Minimum Length
+AB18	Maximum Length
+AC18	Exclusive Minimum
+AD18	Minimum
+AE18	Exclusive Maximum
+AF18	Maximum
+AG18	Multiple Of
+AH18	Minimum Properties
+AI18	Maximum Properties
+AJ18	Required Properties
+AK18	Pattern
+AL18	Semantic Type
+AM18	Deprecated
+AN18	Comments (internal)
+AO18	ID
+AP18	Custom Property
+AQ18	Custom Value

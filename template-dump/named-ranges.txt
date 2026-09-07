@@ -1,11 +1,18 @@
-CustomProperties	'Custom Properties'!$A$5:$B$21
+CustomProperties	'Custom Properties'!$A$4:$H$1000
+_ServerFieldLabels	_ServerFields!$A$2:$A$24
+_ServerFieldMatrix	_ServerFields!$B$2:$AS$24
+_ServerTypes	_ServerFields!$B$1:$AS$1
 apiVersion	Fundamentals!$C$5
+authoritativeDefinitions	'Authoritative Definitions'!$A$4:$Z$1000
+constraints	Constraints!$A$4:$Z$1000
+context.instructions	Fundamentals!$C$25
 dataProduct	Fundamentals!$C$15
 datacontract_id	Fundamentals!$C$7
 description.limitations	Fundamentals!$C$20
 description.purpose	Fundamentals!$C$19
 description.usage	Fundamentals!$C$21
 domain	Fundamentals!$C$14
+enum	Enum!$A$4:$Z$1000
 id	Fundamentals!$C$7
 instructions.importUrl	Instructions!$B$24
 kind	Fundamentals!$C$4
@@ -16,78 +23,58 @@ price.priceCurrency	Pricing!$B$5
 price.priceUnit	Pricing!$B$6
 quality	Quality!$A$4:$AZ$300
 relationships	Relationships!$A$4:$AZ$300
-servers.azure.delimiter	Servers!$C$14
-servers.azure.format	Servers!$C$13
-servers.azure.location	Servers!$C$12
-servers.bigquery.dataset	Servers!$C$18
-servers.bigquery.project	Servers!$C$17
-servers.custom.account	Servers!$C$67
-servers.custom.catalog	Servers!$C$68
-servers.custom.database	Servers!$C$69
-servers.custom.dataset	Servers!$C$70
-servers.custom.delimiter	Servers!$C$71
-servers.custom.endpointUrl	Servers!$C$72
-servers.custom.format	Servers!$C$73
-servers.custom.host	Servers!$C$74
-servers.custom.location	Servers!$C$75
-servers.custom.path	Servers!$C$76
-servers.custom.port	Servers!$C$77
-servers.custom.project	Servers!$C$78
-servers.custom.region	Servers!$C$79
-servers.custom.regionName	Servers!$C$80
-servers.custom.schema	Servers!$C$81
-servers.custom.serviceName	Servers!$C$82
-servers.custom.stagingDir	Servers!$C$83
-servers.custom.stream	Servers!$C$84
-servers.custom.warehouse	Servers!$C$85
-servers.databricks.catalog	Servers!$C$21
-servers.databricks.host	Servers!$C$23
-servers.databricks.schema	Servers!$C$22
+servers.account	Servers!$C$11
+servers.catalog	Servers!$C$12
+servers.catalogUrl	Servers!$C$13
+servers.database	Servers!$C$14
+servers.dataset	Servers!$C$15
+servers.delimiter	Servers!$C$16
 servers.description	Servers!$C$6
+servers.encoding	Servers!$C$17
+servers.endpointUrl	Servers!$C$18
 servers.environment	Servers!$C$5
-servers.glue.account	Servers!$C$26
-servers.glue.database	Servers!$C$27
-servers.glue.format	Servers!$C$29
-servers.glue.location	Servers!$C$28
-servers.kafka.format	Servers!$C$33
-servers.kafka.host	Servers!$C$32
-servers.oracle.host	Servers!$C$62
-servers.oracle.port	Servers!$C$63
-servers.oracle.servicename	Servers!$C$64
-servers.postgres.database	Servers!$C$38
-servers.postgres.host	Servers!$C$36
-servers.postgres.port	Servers!$C$37
-servers.postgres.schema	Servers!$C$39
-servers.s3.delimiter	Servers!$C$45
-servers.s3.endpointUrl	Servers!$C$43
-servers.s3.format	Servers!$C$44
-servers.s3.location	Servers!$C$42
+servers.format	Servers!$C$19
+servers.host	Servers!$C$20
+servers.id	Servers!$C$35
+servers.location	Servers!$C$21
+servers.namespace	Servers!$C$22
+servers.path	Servers!$C$23
+servers.port	Servers!$C$24
+servers.project	Servers!$C$25
+servers.region	Servers!$C$26
+servers.regionName	Servers!$C$27
+servers.schema	Servers!$C$28
 servers.server	Servers!$C$4
-servers.snowflake.account	Servers!$C$50
-servers.snowflake.database	Servers!$C$51
-servers.snowflake.host	Servers!$C$48
-servers.snowflake.port	Servers!$C$49
-servers.snowflake.schema	Servers!$C$53
-servers.snowflake.warehouse	Servers!$C$52
-servers.sqlserver.database	Servers!$C$58
-servers.sqlserver.host	Servers!$C$56
-servers.sqlserver.port	Servers!$C$57
-servers.sqlserver.schema	Servers!$C$59
+servers.serviceName	Servers!$C$29
+servers.stagingDir	Servers!$C$30
+servers.stream	Servers!$C$31
 servers.type	Servers!$C$8
+servers.warehouse	Servers!$C$32
+servers.workgroup	Servers!$C$33
 slaDefaultElement	SLA!$B$4
 status	Fundamentals!$C$10
-support	Support!$A$4:$F$1000
+support	Support!$A$4:$Z$1000
+synonyms	Synonyms!$A$4:$Z$1000
 tags	Fundamentals!$C$23
-team	Team!$A$4:$G$1000
+team	Team!$A$9:$Z$1000
+team.description	Team!$B$5
+team.id	Team!$B$7
+team.name	Team!$B$4
+team.tags	Team!$B$6
+templateVersion	Instructions!$B$29
 tenant	Fundamentals!$C$16
+verifiedStatements	'Verified Statements'!$A$4:$Z$1000
 version	Fundamentals!$C$9
 schema.businessName	'Schema <table_name>'!$B$8	(scope: Schema <table_name>)
+schema.context.instructions	'Schema <table_name>'!$B$14	(scope: Schema <table_name>)
 schema.dataGranularityDescription	'Schema <table_name>'!$B$10	(scope: Schema <table_name>)
+schema.deprecated	'Schema <table_name>'!$B$13	(scope: Schema <table_name>)
 schema.description	'Schema <table_name>'!$B$7	(scope: Schema <table_name>)
+schema.id	'Schema <table_name>'!$B$12	(scope: Schema <table_name>)
 schema.name	'Schema <table_name>'!$B$5	(scope: Schema <table_name>)
 schema.physicalName	'Schema <table_name>'!$B$9	(scope: Schema <table_name>)
 schema.physicalType	'Schema <table_name>'!$B$6	(scope: Schema <table_name>)
-schema.properties	'Schema <table_name>'!$A$13:$L$981	(scope: Schema <table_name>)
+schema.properties	'Schema <table_name>'!$A$18:$AZ$981	(scope: Schema <table_name>)
 schema.tags	'Schema <table_name>'!$B$11	(scope: Schema <table_name>)
-roles	Roles!$A$4:$E$1000	(scope: Roles)
-slaProperties	SLA!$A$6:$F$1002	(scope: SLA)
+roles	Roles!$A$4:$Z$1000	(scope: Roles)
+slaProperties	SLA!$A$6:$Z$1002	(scope: SLA)

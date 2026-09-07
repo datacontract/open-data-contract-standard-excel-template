@@ -1,0 +1,12 @@
+sheet	Enum	state=visible
+A1	Enum
+A2	Allowed values of a property. Use schema.property dot syntax for the property (e.g. orders.status).
+A4	Schema
+B4	Property
+C4	Value
+D4	Label
+E4	Description
+F4	Tags
+G4	ID
+H4	Custom Property
+I4	Custom Value

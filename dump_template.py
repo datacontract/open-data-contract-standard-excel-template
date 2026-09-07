@@ -5,7 +5,9 @@ Usage:
     python dump_template.py --check    # exit 1 when template-dump/ is stale
 """
 
+import re
 import sys
+import zipfile
 from pathlib import Path
 
 import openpyxl
@@ -15,8 +17,18 @@ TEMPLATE = ROOT / "odcs-template.xlsx"
 OUT = ROOT / "template-dump"
 
 
-def dump(workbook) -> dict[str, str]:
+def dump(workbook, path=TEMPLATE) -> dict[str, str]:
     files = {}
+    # validations and conditional formats with a direct reference to another sheet are stored as
+    # x14 extensions; openpyxl-based consumers drop them, so they must not exist (use names instead)
+    extensions = []
+    with zipfile.ZipFile(path) as archive:
+        for name in sorted(archive.namelist()):
+            if name.startswith("xl/worksheets/sheet"):
+                xml = archive.read(name).decode()
+                for tag in re.findall(r"<x14:(dataValidation|conditionalFormatting)\b", xml):
+                    extensions.append(f"{name}\t{tag}")
+    files["unsupported-extensions.txt"] = "\n".join(extensions) + "\n"
     names = []
     for name, defined in sorted(workbook.defined_names.items()):
         names.append(f"{name}\t{defined.attr_text}")

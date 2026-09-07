@@ -7,7 +7,7 @@ A2	This section describes the data model for one table, message, or object with 
 A4	Kind
 C4	DataContract
 A5	apiVersion
-C5	v3.0.2
+C5	v3.2.0
 A7	ID
 A8	Name
 A9	Version
@@ -21,3 +21,4 @@ B19	Purpose
 B20	Limitations
 B21	Usage
 A23	Tags
+A25	Context Instructions

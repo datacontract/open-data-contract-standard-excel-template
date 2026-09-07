@@ -1,73 +1,36 @@
 sheet	Servers	state=visible
-validation	C8:F8	list	"api,athena,azure,bigquery,clickhouse,databricks,db2,denodo,dremio,duckdb,glue,cloudsql,informix,kafka,kinesis,mysql,local,oracle,postgresql,presto,pubsub,redshift,s3,sftp,snowflake,sqlserver,synapse,trino,vertica,custom"
+validation	C8:Z8	list	_ServerTypes
+conditional	C11:Z33	expression	AND(C$8<>"",IFERROR(INDEX(_ServerFieldMatrix,MATCH($B11,_ServerFieldLabels,0),MATCH(C$8,_ServerTypes,0)),"")="")
 A1	Infrastructure and Servers
 A2	The servers element describes where the data protected by this data contract is physically located. 
 A4	Server
 A5	Environment
 A6	Description
 A8	Type
-A11	Azure
-B12	Location
-B13	Format
-B14	Delimiter
-A16	BigQuery
-B17	Project
-B18	Dataset
-A20	Databricks Server
-B21	Catalog
-B22	Schema
-B23	Host
-A25	Amazon Glue
-B26	Account
-B27	Database
-B28	Location
-B29	Format
-A31	Kafka
-B32	Host
-B33	Format
-A35	PostgreSQL
-B36	Host
-B37	Port
-B38	Database
-B39	Schema
-A41	S3
-B42	Location
-B43	Endpoint URL
-B44	Format
-B45	Delimiter
-A47	Snowflake
-B48	Host
-B49	Port
-B50	Account
-B51	Database
-B52	Warehouse
-B53	Schema
-A55	SQL Server
-B56	Host
-B57	Port
-B58	Database
-B59	Schema
-A61	Oracle
-B62	Host
-B63	Port
-B64	ServiceName
-A66	Custom
-B67	Account
-B68	Catalog
-B69	Database
-B70	Dataset
-B71	Delimiter
-B72	Endpoint URL
-B73	Format
-B74	Host
-B75	Location
-B76	Path
-B77	Port
-B78	Project
-B79	Region
-B80	Region Name
-B81	Schema
-B82	Service Name
-B83	Staging Directory
-B84	Stream
-B85	Warehouse
+A10	Connection
+B11	Account
+B12	Catalog
+B13	Catalog URL
+B14	Database
+B15	Dataset
+B16	Delimiter
+B17	Encoding
+B18	Endpoint URL
+B19	Format
+B20	Host
+B21	Location
+B22	Namespace
+B23	Path
+B24	Port
+B25	Project
+B26	Region
+B27	Region Name
+B28	Schema
+B29	Service Name
+B30	Staging Directory
+B31	Stream
+B32	Warehouse
+B33	Workgroup
+B35	ID
+B36	Custom Property
+B37	Custom Value

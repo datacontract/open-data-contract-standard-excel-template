@@ -1,0 +1,13 @@
+sheet	Synonyms	state=visible
+A1	Synonyms
+A2	Alternative names for a schema or a property. Leave Property blank for a synonym of the schema itself.
+A4	Schema
+B4	Property
+C4	Synonym
+D4	Description
+E4	Locale
+F4	Source
+G4	Status
+H4	ID
+I4	Custom Property
+J4	Custom Value

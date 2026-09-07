@@ -1,0 +1,12 @@
+sheet	Verified Statements	state=visible
+validation	A5:A1000	list	"Contract,Schema"
+A1	Verified Statements
+A2	Verified question/answer pairs that give consumers and AI agents context. Level: Contract or Schema.
+A4	Level
+B4	Schema
+C4	Question
+D4	Answer
+E4	Tags
+F4	ID
+G4	Custom Property
+H4	Custom Value

@@ -8,3 +8,6 @@ C6	Extended value
 D6	Unit
 E6	Element
 F6	Driver
+G6	ID
+H6	Custom Property
+I6	Custom Value

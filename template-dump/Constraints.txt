@@ -1,0 +1,11 @@
+sheet	Constraints	state=visible
+validation	A5:A1000	list	"Contract,Schema"
+A1	Constraints
+A2	Constraints that consumers and AI agents must respect when using the data. Level: Contract or Schema.
+A4	Level
+B4	Schema
+C4	Constraint
+D4	Tags
+E4	ID
+F4	Custom Property
+G4	Custom Value

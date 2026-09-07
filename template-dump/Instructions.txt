@@ -20,6 +20,8 @@ B23	Open Entropy Data → Go to Data Contracts → Click Add Data Contract → I
 A26	Authors:
 B26	Jochen Christ, Dr. Simon Harrer
 A27	Version:
-B27	2025-12-01
+B27	2026-09-07
 A28	License:
 B28	MIT
+A29	Template Version:
+B29	1900-01-02 00:00:00
