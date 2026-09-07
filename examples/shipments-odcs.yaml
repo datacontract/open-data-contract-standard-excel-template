@@ -291,6 +291,8 @@ team:
   - platform
   id: team-fulfillment
   customProperties:
+  - property: costCenter
+    value: 42
   - property: slack
     value: '#fulfillment-data'
 roles:
