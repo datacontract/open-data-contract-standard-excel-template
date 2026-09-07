@@ -1,0 +1,4 @@
+__pycache__/
+.idea/
+.ruff_cache/
+.DS_Store
