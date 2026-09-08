@@ -1,4 +1,4 @@
-apiVersion: v3.0.0
+apiVersion: v3.2.0
 kind: DataContract
 id: fulfillment_shipments_v1
 name: Shipments
@@ -18,13 +18,36 @@ description:
   customProperties:
   - property: github_link
     value: https://github.example.com/shipment-specification.yaml
+context:
+  instructions: >-
+    This contract describes outbound parcel shipments. One row is one shipment,
+    never one order: an order can be split across several shipments. Join to
+    orders through order_id. Delivery dates are stored in UTC.
+  verifiedStatements:
+  - id: shipments_per_day
+    question: How many shipments were delivered per day last month?
+    answer: Count shipments where status = 'Delivered', grouped by the date part of delivery_date.
+    tags:
+    - reporting
+  - id: open_shipments
+    question: Which shipments are still in transit?
+  constraints:
+  - id: no_pii_export
+    constraint: Do not expose address or tracking_number in dashboards shared outside the company.
+    authoritativeDefinitions:
+    - type: Data Guidelines
+      url: https://example.com/data-guidelines.html
 customProperties:
 - property: additionalField
   value: some value
 - property: owner
   value: controlling-team
+- property: dataProductId
+  value: fulfillment-shipments
+  vendor: datamesh-manager
 schema:
 - name: shipments
+  id: shipments
   physicalType: table
   physicalName: shipments_v1
   businessName: Shipments
@@ -32,14 +55,27 @@ schema:
   dataGranularityDescription: Not Aggregated
   tags:
   - pii
+  synonyms:
+  - synonym: Deliveries
+    description: Term used by the logistics team.
+    source: glossary
+    status: active
+  - synonym: Sendungen
+    locale: de-DE
+  context:
+    instructions: >-
+      Aggregate on delivery_date for time series. Rows with status 'Cancelled'
+      must be excluded from delivery performance metrics.
+    constraints:
+    - constraint: Never use this table to contact recipients directly.
   quality:
   - type: sql
     description: Table shall contain at least 1 row
     query: SELECT COUNT(*) FROM shipments
-    thresholdType: mustBeGreaterThanOrEqualTo
-    mustBeGreaterThanOrEqualTo: 1
+    mustBeGreaterOrEqualTo: 1
   properties:
   - name: shipment_id
+    id: shipment_id
     businessName: Shipment ID
     physicalName: sid
     logicalType: string
@@ -56,10 +92,14 @@ schema:
     quality: []
     tags:
     - businesskey
+    synonyms:
+    - synonym: Delivery Number
+      source: legacy-system
     authoritativeDefinitions:
     - type: businessDefinition
       url: https://example.com/definitions/shipment_id
   - name: order_id
+    id: order_id
     businessName: Order ID
     physicalName: oid
     logicalType: string
@@ -76,6 +116,10 @@ schema:
     examples:
     - ORD12345
     criticalDataElement: false
+    relationships:
+    - id: shipment_to_order
+      type: foreignKey
+      to: orders.order_id
   - name: delivery_date
     businessName: Delivery Date
     logicalType: date
@@ -87,7 +131,7 @@ schema:
     partitioned: false
     classification: internal
     examples:
-    - 2023-10-01T10:00:00Z
+    - "2023-10-01T10:00:00Z"
     criticalDataElement: false
     quality: []
   - name: carrier
@@ -100,6 +144,9 @@ schema:
     primaryKey: false
     partitioned: false
     classification: internal
+    semanticType: dimension
+    synonyms:
+    - synonym: Shipping Provider
     examples:
     - FedEx
     - UPS
@@ -122,6 +169,9 @@ schema:
     customProperties:
     - property: external
       value: "true"
+    - property: maskingPolicy
+      value: mask_tracking_number
+      vendor: snowflake
   - name: status
     businessName: Status
     logicalType: string
@@ -132,11 +182,49 @@ schema:
     primaryKey: false
     partitioned: false
     classification: internal
+    semanticType: dimension
+    enum:
+    - value: Delivered
+      label: Delivered
+      description: The shipment reached the recipient.
+      tags:
+      - final
+    - value: In Transit
+      label: In Transit
+      description: The shipment left the warehouse and is on its way.
+    - value: Cancelled
+      label: Cancelled
+      description: The shipment was cancelled before delivery.
+      customProperties:
+      - property: label_de
+        value: Storniert
     examples:
     - Delivered
     - In Transit
     criticalDataElement: false
     quality: []
+  - name: legacy_status_code
+    businessName: Legacy Status Code
+    logicalType: string
+    description: Status code of the decommissioned fulfillment system.
+    deprecated: true
+    required: false
+    physicalType: text
+    classification: internal
+    examples:
+    - DLV
+  - name: shipping_cost
+    businessName: Shipping Cost
+    logicalType: number
+    description: Total shipping cost billed by the carrier.
+    required: false
+    physicalType: decimal
+    classification: internal
+    semanticType: measure
+    transformLogic: SUM(shipping_cost)
+    transformDescription: Sum of the carrier cost of all shipments in the group.
+    examples:
+    - 12.5
   - name: inline_object_definition
     businessName: Inline Object Definition
     logicalType: object
@@ -195,14 +283,31 @@ schema:
       primaryKey: false
       partitioned: false
       classification: restricted
+      semanticType: dimension
+      enum:
+      - value: DE
+        label: Germany
+      - value: AT
+        label: Austria
+      - value: CH
+        label: Switzerland
       examples:
       - DE
 servers:
 - server: production
+  id: production
   type: bigquery
   environment: production
   dataset: shipments_v1
   project: acme_shipments_prod
+- server: staging
+  id: staging
+  type: postgresql
+  environment: staging
+  host: staging-db.example.com
+  port: ${DB_PORT}
+  database: shipments
+  schema: public
 support:
 - channel: slackname
   url: http://find.me.here
@@ -228,3 +333,10 @@ slaProperties:
   value: 95%
   unit: '%'
   driver: operational
+  authoritativeDefinitions:
+  - type: Data Guidelines
+    url: https://example.com/sla-availability
+  customProperties:
+  - property: measuredBy
+    value: soda-cloud-monitor
+    vendor: soda
