@@ -1,8 +1,8 @@
 # Open Data Contract Standard (ODCS) - Excel Template
 
-This repository contains an [Excel template](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx) for authoring data contracts using the **Open Data Contract Standard V3**. 
+This repository contains an [Excel template](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx) for authoring data contracts using the **Open Data Contract Standard**. 
 It provides a user-friendly interface to define and share data contracts with stakeholders, especially those less familiar with YAML.
-You can convert the Excel into YAML through the [Data Contract CLI](#data-contract-cli) or upload it directly to [Data Mesh Manager](#data-mesh-manager).
+You can convert the Excel into YAML through the [Data Contract CLI](#data-contract-cli) or upload it directly to [Entropy Data](#entropy-data).
 
 <a href="https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx">
 <img width="1397" alt="image" src="https://github.com/user-attachments/assets/f9013cee-a9c8-4ba8-a111-0f4b2e9b6bf8" />
@@ -12,13 +12,17 @@ You can convert the Excel into YAML through the [Data Contract CLI](#data-contra
 ## 📥 Template
 
 Download the Excel Template:
-- [odcs-template.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
+- [Latest version](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template.xlsx)
+- [ODCS v3.2.0](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template-v3.2.xlsx)
+- [ODCS v3.1.0](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template-v3.1.xlsx)
+- [ODCS v3.0.2](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template-v3.0.xlsx)
 
-## 💡 Example
+## 💡 Examples
 
-Here is an example Data Contract:
+Here are example Data Contracts:
 
 - [shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.xlsx) that can be converted to [this YAML](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.yaml) 
+- [full-odcs-3.2.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/full-odcs-3.2.xlsx) and [its YAML](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/full-odcs-3.2.yaml), a reference contract that uses every element of ODCS v3.2.0 — multiple schemas, all quality types, enums, synonyms, context, relationships and servers
 
 
 ## 🧾 What is a Data Contract?
@@ -43,31 +47,59 @@ Defines the data model with all properties.
 
 Copy this sheet for every table in your data contract.
 
-### 4. `Support`
+### 4. `Relationships`
+
+Defines relationships between schemas by mapping properties from one schema to another (e.g., foreign keys).
+
+### 5. `Quality`
+
+Describes data quality rules & parameters. They are tightly linked to the schema described in the `Schema` sheet(s).
+
+### 6. `Support`
 
 Support and communication channels help consumers find help regarding their use of the data contract.
 
-### 5. `Team`
+### 7. `Team`
 
 This section lists team members and the history of their relation with this data contract. In v2.x, this section was called stakeholders.
 
-### 6. `Roles`
+### 8. `Roles`
 
 This section lists team members and the history of their relation with this data contract.
 
-### 7. `SLA`
+### 9. `SLA`
 
 This section describes the service-level agreements (SLA).
 
-### 8. `Servers`
+### 10. `Servers`
 
 The servers element describes where the data protected by this data contract is physically located. 
 
-### 9. `Pricing`
+### 11. `Pricing`
 
 This section covers pricing when you bill your customer for using this data product.
 
-### 10. `Custom Properties`
+### 12. `Authoritative Definitions`
+
+References to authoritative sources such as business definitions, implementations, or tutorials for any element of the contract.
+
+### 13. `Verified Statements`
+
+Verified question/answer pairs that give consumers and AI agents context.
+
+### 14. `Constraints`
+
+Constraints that consumers and AI agents must respect when using the data.
+
+### 15. `Enums`
+
+Restricts the allowed values of a property. Use one row per accepted value.
+
+### 16. `Synonyms`
+
+Alternative names for a schema or a property. Leave `Property` blank when referring to a schema.
+
+### 17. `Custom Properties`
 
 Use this optional sheet to define additional metadata or annotations.
 
@@ -81,9 +113,9 @@ Use the open-source [Data Contract CLI](https://github.com/datacontract/datacont
 datacontract import --format excel --source odcs.xlsx
 ```
 
-### Data Mesh Manager
+### Entropy Data
 
-Upload the Excel directly in [Data Mesh Manager](https://datamesh-manager.com) using the “Import Excel” feature, and open existing ODCS data contracts in Excel using the "Open in Excel" feature.
+Upload the Excel directly to [Entropy Data](https://entropy-data.com) using the “Import Excel” feature, and open existing ODCS data contracts in Excel using the "Open in Excel" feature.
 
 <img width="1257" alt="image" src="https://github.com/user-attachments/assets/993a15bf-c1a3-495a-95fc-a0ba4d765c87" />
 
