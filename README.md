@@ -17,11 +17,12 @@ Download the Excel Template:
 - [ODCS v3.1.0](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template-v3.1.xlsx)
 - [ODCS v3.0.2](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/odcs-template-v3.0.xlsx)
 
-## 💡 Example
+## 💡 Examples
 
-Here is an example Data Contract:
+Here are example Data Contracts:
 
 - [shipments-example.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.xlsx) that can be converted to [this YAML](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/shipments-odcs.yaml) 
+- [full-odcs-3.2.xlsx](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/full-odcs-3.2.xlsx) and [its YAML](https://github.com/datacontract/open-data-contract-standard-excel-template/raw/refs/heads/main/examples/full-odcs-3.2.yaml), a reference contract that uses every element of ODCS v3.2.0 — multiple schemas, all quality types, enums, synonyms, context, relationships and servers
 
 
 ## 🧾 What is a Data Contract?
